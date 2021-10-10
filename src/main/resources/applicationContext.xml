@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean name="p1" abstract="true" scope="singleton">-->
+<!--        <property name="fruit" value="橙子"/>-->
+<!--    </bean>-->
+<!--    <bean name="u2" class="com.xefei.service.U2Service" parent="p1">-->
+<!--    </bean>-->
+      <bean name="u2" class="com.xefei.service.U2Service" factory-method="" >
+      </bean>
+</beans>
