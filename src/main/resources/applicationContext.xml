@@ -3,11 +3,20 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean name="p1" abstract="true" scope="singleton">-->
-<!--        <property name="fruit" value="橙子"/>-->
+    <bean name="u1Service" class="com.service.U1Service" autowire="byName">
+<!--        <constructor-arg name="u2Service" ref="u2Service"></constructor-arg>-->
+<!--        <property name="u2Service" ref="u2Service"></property>-->
+    </bean>
+    <bean name="u2Service" class="com.service.U2Service">
+        <!--<property name="fruit" value="hhhh"></property>-->
+    </bean>
+    <bean name="u3Service" class="com.service.U3Service">
+    </bean>
+    <bean name="fruit" class="java.lang.String">
+        <constructor-arg name="original" value="jjjjj"></constructor-arg>
+    </bean>
+    <!--可以自己对bean进行初始化,扩展点-->
+<!--    <bean name="test1InstantiationAwareBeanPostProcessor" class="com.xefei.di.Test1InstantiationAwareBeanPostProcessor">-->
 <!--    </bean>-->
-<!--    <bean name="u2" class="com.xefei.service.U2Service" parent="p1">-->
-<!--    </bean>-->
-      <bean name="u2" class="com.xefei.service.U2Service" factory-method="" >
-      </bean>
+
 </beans>

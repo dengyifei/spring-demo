@@ -1,4 +1,4 @@
-package com.mapper;
+package com.dao;
 
 import com.xefei.annotation.Dao2Annatation;
 

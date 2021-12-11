@@ -1,7 +1,6 @@
 package com.xefei.beanfactory;
 
-import com.xefei.service.U2Service;
-import org.springframework.beans.factory.support.AbstractBeanDefinition;
+import com.service.U2Service;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.AnnotatedBeanDefinitionReader;
 

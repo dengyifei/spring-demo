@@ -1,4 +1,4 @@
-package com.xefei.scan;
+package com.xefei.app;
 
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;

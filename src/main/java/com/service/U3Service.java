@@ -1,7 +1,8 @@
-package com.xefei.service;
+package com.service;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class U1Service {
+public class U3Service {
+
 }
