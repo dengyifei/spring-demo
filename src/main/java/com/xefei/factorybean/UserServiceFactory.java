@@ -4,7 +4,7 @@ import com.service.U1Service;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class UserServiceFactory implements FactoryBean<F1Service> {
 
     @Override
@@ -15,7 +15,7 @@ public class UserServiceFactory implements FactoryBean<F1Service> {
 
     @Override
     public Class<?> getObjectType() {
-        return F1Service.class;
+        return Object.class;
     }
 
     @Override

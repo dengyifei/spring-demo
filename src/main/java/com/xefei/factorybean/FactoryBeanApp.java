@@ -23,6 +23,7 @@ public class FactoryBeanApp {
         beanDefinition.setScope(AbstractBeanDefinition.SCOPE_SINGLETON);
         beanDefinition.setPrimary(true);
         context.registerBeanDefinition(Introspector.decapitalize(DefaultQueryDaoFactoryBean.class.getSimpleName()),beanDefinition);
+        context.register(FactoryBeanApp.class);
         context.refresh();
 
         QueryDaoFactoryBean bean = context.getBean(QueryDaoFactoryBean.class);
@@ -32,6 +33,9 @@ public class FactoryBeanApp {
         System.out.println(queryDao);
         queryDao = (QueryDao)context.getBean(Introspector.decapitalize(bean.getClass().getSimpleName()));
         System.out.println(queryDao);
+
+        System.out.println(context.getBeanDefinition("userServiceFactory"));
+        System.out.println(context.getBean(F1Service.class));
 //        try {
 //            System.out.println(bean);
 //        } catch (Exception e) {
